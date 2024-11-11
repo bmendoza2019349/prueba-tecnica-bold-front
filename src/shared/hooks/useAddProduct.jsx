@@ -30,7 +30,7 @@ export const useAddProduct = () => {
 
             toast.success('Producto agregado correctamente');
             navigate('/productos');
-            window.location.reload();
+            
         } catch (error) {
             setIsLoading(false);
             console.error('Add product failed', error);
